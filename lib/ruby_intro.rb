@@ -12,8 +12,9 @@ def max_2_sum arr
   return 0 if arr.length == 0
   return arr[0] if arr.length == 1
   
-  max1 = -100
-  max2 = -100
+  max1 = -(2**(0.size*8 - 2))
+  max2 = -(2**(0.size*8 - 2))
+  
   arr.each do |element|
     max2 = element if element > max2
     if max2 >= max1
